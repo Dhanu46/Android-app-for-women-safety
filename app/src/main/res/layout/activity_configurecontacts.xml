@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="10dp"
+    android:clipToPadding="false"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/CONFIGURE_CONTACTS"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(You can add a maximum of three contacts. The first number will be contacted during call and SOS)"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:id="@+id/contactOneLayout"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:id="@+id/contactOne"
+            android:layout_weight="2"/>
+
+        <Button
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/delete"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/deleteOne"
+            android:onClick="deleteContact"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:id="@+id/contactTwoLayout"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:visibility="gone">
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/CONFIGURE_CONTACTS"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:id="@+id/contactTwo"
+        android:layout_weight="2"
+        />
+
+        <Button
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/delete"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/deleteTwo"
+            android:onClick="deleteContact"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/contactThreeLayout"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:visibility="gone">
+
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/CONFIGURE_CONTACTS"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:id="@+id/contactThree"
+        android:layout_weight="2"
+        />
+
+        <Button
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/delete"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/deleteThree"
+            android:onClick="deleteContact"
+
+            />
+    </LinearLayout>
+
+    <Button
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:text="@string/ADD_CONTACT"
+        android:onClick="addContact"
+        android:padding="15dp"
+        android:drawableLeft="@drawable/add_contact"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:clipToPadding="false"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ADD_CONTACT_MANUALLY"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            style="@style/EditTextStyle"
+            android:layout_marginTop="20dp"
+            android:hint="@string/NAME"
+            android:id="@+id/name"
+            android:inputType="text"
+            android:fontFamily="sans-serif"
+            />
+        <LinearLayout
+            style="@style/LinearLayoutStyle"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            style="@style/EditTextStyle"
+            android:layout_marginTop="20dp"
+            android:hint="@string/NUMBER"
+            android:id="@+id/mobile"
+            android:inputType="phone"
+            android:fontFamily="sans-serif"/>
+
+        <LinearLayout
+            style="@style/LinearLayoutStyle"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            style="@style/ButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+
+            android:text="@string/ADD_CONTACT"
+            android:onClick="addContactManually"
+            android:padding="15dp"
+            android:drawableLeft="@drawable/add_contact"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+</ScrollView>

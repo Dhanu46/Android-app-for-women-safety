@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="10dp"
+    android:clipToPadding="false"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/CONFIGURE_SMS"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        style="@style/EditTextStyle"
+        android:layout_marginTop="40dp"
+        android:id="@+id/sms"
+        android:text="@string/DEFAULT_SMS_TEXT"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:gravity="top|left"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        android:fontFamily="monospace"
+        />
+
+    <LinearLayout
+        style="@style/LinearLayoutStyle" />
+
+    <Button
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:text="@string/SAVE_SMS"
+        android:layout_marginTop="30dp"
+        android:onClick="saveSMS"
+
+        />
+</LinearLayout>

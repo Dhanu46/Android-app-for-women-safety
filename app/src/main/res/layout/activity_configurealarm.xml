@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="10dp"
+    >
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/savior"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/SELECT_SOUND"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/soundType"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/POLICE"
+            android:id="@+id/police"
+            android:textSize="18sp"
+            android:textColor="@color/primary_text"
+            android:textStyle="bold"
+            android:buttonTint="@color/colorPrimaryDark"
+            android:checked="true"
+
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/AMBULANCE"
+            android:id="@+id/ambulance"
+            android:textSize="18sp"
+            android:textColor="@color/primary_text"
+            android:textStyle="bold"
+            android:buttonTint="@color/colorPrimaryDark"
+            android:layout_marginTop="5dp"
+
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/SIREN"
+            android:id="@+id/siren"
+            android:textSize="18sp"
+            android:textColor="@color/primary_text"
+            android:textStyle="bold"
+            android:buttonTint="@color/colorPrimaryDark"
+            android:layout_marginTop="5dp"
+            />
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:clipToPadding="false"
+        android:padding="10dp">
+
+        <Button
+            style="@style/ButtonStyle"
+            android:text="@string/PLAY"
+            android:onClick="playSound"
+            android:padding="15dp"
+            />
+
+        <Button
+            style="@style/ButtonStyle"
+            android:text="@string/SET_ALARM"
+            android:onClick="setAsAlarm"
+            android:padding="15dp"
+            android:layout_marginLeft="10dp"
+            />
+
+    </LinearLayout>
+</LinearLayout>

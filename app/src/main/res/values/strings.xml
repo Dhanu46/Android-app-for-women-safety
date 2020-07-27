@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Savior</string>
+    <string name="APP_NAME">Savior</string>
+    <string name="VERSION">Ver 1.0.0</string>
+    <string name="LOADING">Loading...</string>
+    <string name="REGISTRATION">Registration</string>
+    <string name="CONFIRM_PASSWORD">Confirm Password</string>
+    <string name="EMAIL_ADDRESS">Enter mail ID</string>
+    <string name="MOBILE_NUMBER">Enter mobile number</string>
+    <string name="USERNAME">Enter Username</string>
+    <string name="PASSWORD">Enter Password</string>
+    <string name="SIGNUP">Register</string>
+    <string name="LOGIN">Login</string>
+    <string name="WELCOME">Welcome to Savior</string>
+    <string name="REGISTER"><u>No account yet... Register Here</u></string>
+    <string name="ABOUT_US">About</string>
+    <string name="LOGOUT">Logout</string>
+    <string name="CONFIGURE_CONTACTS">Configure Contacts</string>
+    <string name="CONFIGURE_SMS">Configure SMS</string>
+    <string name="CONFIGURE_ALARM">Configure Alarm</string>
+    <string name="DEFAULT_SMS_TEXT">I am in danger. I need help.</string>
+    <string name="SAVE_SMS">Save SMS</string>
+    <string name="ADD_CONTACT">Add Contact</string>
+    <string name="PLAY">Play Sound</string>
+    <string name="SET_ALARM">Set alarm</string>
+    <string name="POLICE">Police</string>
+    <string name="AMBULANCE">Ambulance</string>
+    <string name="SIREN">Siren</string>
+    <string name="SELECT_SOUND">Select Sound:</string>
+    <string name="FEEDBACK">Feedback</string>
+    <string name="HELP">Help</string>
+    <string name="SELFDEFENSE_MANUAL">Self Defense Manual</string>
+    <string name="FORGOT_PASSWORD">Forgot Password</string>
+    <string name="CHANGE_PASSWORD">Change Password</string>
+    <string name="OLD_PASSWORD">Enter old password</string>
+    <string name="NEW_PASSWORD">Enter new password</string>
+    <string name="CONFIRM_NEW_PASSWORD">Re-enter new password</string>
+    <string name="ADD_CONTACT_MANUALLY">Add Contact Manually</string>
+    <string name="NAME">Enter Contact Name</string>
+    <string name="NUMBER">Enter Contact Mobile</string>
+    <string name="FAKE_CALL">Fake Call</string>
+
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/savior"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:clipToPadding="false"
+        android:layout_marginTop="30dp"
+        >
+
+        <Button
+            style="@style/ButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:text="@string/CONFIGURE_CONTACTS"
+            android:onClick="configureContacts"
+            android:padding="15dp"
+            android:drawableLeft="@drawable/configure_contact"
+            />
+
+        <Button
+            style="@style/ButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:text="@string/CONFIGURE_SMS"
+            android:onClick="configureSMS"
+            android:padding="15dp"
+            android:drawableLeft="@drawable/configure_sms"
+            />
+
+        <Button
+            style="@style/ButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:text="@string/CONFIGURE_ALARM"
+            android:onClick="configureAlarm"
+            android:padding="15dp"
+            android:drawableLeft="@drawable/configure_alarm"
+
+            />
+
+    </LinearLayout>
+</LinearLayout>
